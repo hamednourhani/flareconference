@@ -1,0 +1,33 @@
+/* table style */
+table.timing-table{
+  text-align : center;
+  border : 2px solid $grey3; 
+  color : $grey3;
+  display :table;
+   margin : auto;
+  margin-top : 5px;
+  margin-bottom : 30px;
+  tbody{
+
+    tr{
+      background-color: $white;
+      border-bottom : 1px solid $grey3;
+      padding : 0px 10px;
+      th{
+        color : $black1;
+        font-size: 90%;
+        padding :5px 10px;
+      }
+      td{
+        padding : 5px 10px;
+        max-width : 350px;
+      }
+      &:last-child{
+        border : 0px;
+      }      
+      &:nth-of-type(2n){
+        background-color: $grey2;
+      }
+    }
+  }
+}

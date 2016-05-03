@@ -1,0 +1,1516 @@
+/* theme */
+/* fonts */
+@font-face {
+  font-family: "Weblogma_Yekan";
+  src: url('fonts/Yekan.eot?1459745561');
+  src: url('fonts/Yekan.eot?&1459745561#iefix') format('embedded-opentype'), url('fonts/Yekan.ttf?1459745561') format('truetype'), url('fonts/Yekan.woff?1459745561') format('woff');
+  font-weight: "Yekan.svg"; }
+/* normalize style */
+/* normalize-scss 3.0.2+normalize.3.0.2 | MIT/GPLv2 License | bit.ly/normalize-scss */
+/**
+ * Establish a vertical rhythm unit using $base-font-size, $base-line-height,
+ * and $rhythm-unit variables. Also, correct text resizing oddly in IE 6/7 when
+ * body `font-size` is set using `em` units.
+ */
+/* line 106, ../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/typography/_vertical_rhythm.scss */
+html {
+  font-size: 100%;
+  line-height: 1.5em; }
+
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+/* line 69, sass/base/_normalize.scss */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/**
+ * Remove default margin.
+ */
+/* line 81, sass/base/_normalize.scss */
+body {
+  margin: 0; }
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+/* line 95, sass/base/_normalize.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block; }
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+/* line 116, sass/base/_normalize.scss */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  *display: inline;
+  *zoom: 1;
+  vertical-align: baseline;
+  /* 2 */ }
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 135, sass/base/_normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ */
+/* line 145, sass/base/_normalize.scss */
+[hidden] {
+  display: none; }
+
+/**
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+/* line 154, sass/base/_normalize.scss */
+template {
+  display: none; }
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+/* line 166, sass/base/_normalize.scss */
+a {
+  background-color: transparent; }
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+/* line 175, sass/base/_normalize.scss */
+a:active,
+a:hover {
+  outline: 0; }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+/* line 187, sass/base/_normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+/* line 195, sass/base/_normalize.scss */
+b,
+strong {
+  font-weight: bold; }
+
+/**
+ * Set 1 unit of vertical rhythm on the top and bottom margin.
+ */
+/* line 205, sass/base/_normalize.scss */
+blockquote {
+  margin: 1.5em 40px; }
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+/* line 214, sass/base/_normalize.scss */
+dfn {
+  font-style: italic; }
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+/* line 223, sass/base/_normalize.scss */
+h1 {
+  /* Set the font-size and line-height while keeping a proper vertical rhythm. */
+  font-size: 2em;
+  line-height: 1.5em;
+  /* Set 1 unit of vertical rhythm on the top and bottom margins. */
+  margin-top: 0.75em;
+  margin-bottom: 0.75em; }
+
+/* line 238, sass/base/_normalize.scss */
+h2 {
+  font-size: 1.5em;
+  line-height: 2em;
+  margin-top: 1em;
+  margin-bottom: 1em; }
+
+/* line 244, sass/base/_normalize.scss */
+h3 {
+  font-size: 1.17em;
+  line-height: 1.28205em;
+  margin-top: 1.28205em;
+  margin-bottom: 1.28205em; }
+
+/* line 250, sass/base/_normalize.scss */
+h4 {
+  font-size: 1em;
+  line-height: 1.5em;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em; }
+
+/* line 256, sass/base/_normalize.scss */
+h5 {
+  font-size: 0.83em;
+  line-height: 1.80723em;
+  margin-top: 1.80723em;
+  margin-bottom: 1.80723em; }
+
+/* line 262, sass/base/_normalize.scss */
+h6 {
+  font-size: 0.67em;
+  line-height: 2.23881em;
+  margin-top: 2.23881em;
+  margin-bottom: 2.23881em; }
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+/* line 274, sass/base/_normalize.scss */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/**
+ * Set 1 unit of vertical rhythm on the top and bottom margin.
+ */
+/* line 285, sass/base/_normalize.scss */
+p,
+pre {
+  margin: 1.5em 0; }
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+/* line 295, sass/base/_normalize.scss */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 303, sass/base/_normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+/* line 311, sass/base/_normalize.scss */
+sup {
+  top: -0.5em; }
+
+/* line 315, sass/base/_normalize.scss */
+sub {
+  bottom: -0.25em; }
+
+/* Lists
+   ========================================================================== */
+/**
+ * Address margins set differently in IE 6/7.
+ */
+/* line 327, sass/base/_normalize.scss */
+dl,
+menu,
+ol,
+ul {
+  margin: 1.5em 0; }
+
+/* line 348, sass/base/_normalize.scss */
+dd {
+  margin: 0 0 0 40px; }
+
+/**
+ * Address paddings set differently in IE 6/7.
+ */
+/* line 356, sass/base/_normalize.scss */
+menu,
+ol,
+ul {
+  padding: 0 0 0 40px; }
+
+/**
+ * Correct list images handled incorrectly in IE 7.
+ */
+/* line 368, sass/base/_normalize.scss */
+nav ul,
+nav ol {
+  list-style: none;
+  list-style-image: none; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+/* line 383, sass/base/_normalize.scss */
+img {
+  border: 0;
+  /* Improve image quality when scaled in IE 7. */
+  -ms-interpolation-mode: bicubic; }
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+/* line 396, sass/base/_normalize.scss */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+/* line 408, sass/base/_normalize.scss */
+figure {
+  margin: 1.5em 40px; }
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+/* line 417, sass/base/_normalize.scss */
+hr {
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0; }
+
+/**
+ * Contain overflow in all browsers.
+ */
+/* line 426, sass/base/_normalize.scss */
+pre {
+  overflow: auto; }
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+/* line 434, sass/base/_normalize.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * Correct margin displayed oddly in IE 6/7.
+ */
+/* line 458, sass/base/_normalize.scss */
+form {
+  margin: 0; }
+
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ * 4. Address `font-family` inconsistency between `textarea` and other form in IE 7
+ * 5. Improve appearance and consistency with IE 6/7.
+ */
+/* line 472, sass/base/_normalize.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+  *font-family: sans-serif;
+  /* 4 */
+  *vertical-align: middle;
+  /* 5 */ }
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+/* line 490, sass/base/_normalize.scss */
+button {
+  overflow: visible; }
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+/* line 501, sass/base/_normalize.scss */
+button,
+select {
+  text-transform: none; }
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ * 4. Remove inner spacing in IE 7 without affecting normal text inputs.
+ *    Known issue: inner spacing remains in IE 6.
+ */
+/* line 516, sass/base/_normalize.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+  *overflow: visible;
+  /* 4 */ }
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+/* line 531, sass/base/_normalize.scss */
+button[disabled],
+html input[disabled] {
+  cursor: default; }
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+/* line 540, sass/base/_normalize.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 551, sass/base/_normalize.scss */
+input {
+  line-height: normal; }
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ * 3. Remove excess padding in IE 7.
+ *    Known issue: excess padding remains in IE 6.
+ */
+/* line 566, sass/base/_normalize.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+  *height: 13px;
+  /* 3 */
+  *width: 13px;
+  /* 3 */ }
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+/* line 583, sass/base/_normalize.scss */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+/* line 594, sass/base/_normalize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  /* 2 */
+  /**
+   * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+   * Safari (but not Chrome) clips the cancel button when the search input has
+   * padding (and `textfield` appearance).
+   */ }
+  /* line 604, sass/base/_normalize.scss */
+  input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none; }
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+/* line 614, sass/base/_normalize.scss */
+fieldset {
+  margin: 0 2px;
+  /* Apply borders and padding that keep the vertical rhythm. */
+  border-color: #c0c0c0;
+  border-top-width: 0.0625em;
+  border-top-style: solid;
+  padding-top: 0.4625em;
+  border-bottom-width: 0.0625em;
+  border-bottom-style: solid;
+  padding-bottom: 0.9125em;
+  border-left-width: 0.0625em;
+  border-left-style: solid;
+  padding-left: 0.875em;
+  border-right-width: 0.0625em;
+  border-right-style: solid;
+  padding-right: 0.875em; }
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ * 3. Correct alignment displayed oddly in IE 6/7.
+ */
+/* line 630, sass/base/_normalize.scss */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+  *margin-left: -7px;
+  /* 3 */ }
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+/* line 644, sass/base/_normalize.scss */
+textarea {
+  overflow: auto; }
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+/* line 653, sass/base/_normalize.scss */
+optgroup {
+  font-weight: bold; }
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+/* line 664, sass/base/_normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 669, sass/base/_normalize.scss */
+td,
+th {
+  padding: 0; }
+
+/******************************************************************
+Site Name:
+Author:
+
+Stylesheet: Typography
+
+Need to import a font or set of icons for your site? Drop them in
+here or just use this to establish your typographical grid. Or not.
+Do whatever you want to...GOSH!
+
+Helpful Articles:
+http://trentwalton.com/2012/06/19/fluid-type/
+http://ia.net/blog/responsive-typography-the-basics/
+http://alistapart.com/column/responsive-typography-is-a-physical-discipline
+
+******************************************************************/
+/*********************
+FONT FACE (IN YOUR FACE)
+*********************/
+/*  To embed your own fonts, use this syntax
+  and place your fonts inside the
+  library/fonts folder. For more information
+  on embedding fonts, go to:
+  http://www.fontsquirrel.com/
+  Be sure to remove the comment brackets.
+*/
+/*  @font-face {
+      font-family: 'Font Name';
+      src: url('library/fonts/font-name.eot');
+      src: url('library/fonts/font-name.eot?#iefix') format('embedded-opentype'),
+             url('library/fonts/font-name.woff') format('woff'),
+             url('library/fonts/font-name.ttf') format('truetype'),
+             url('library/fonts/font-name.svg#font-name') format('svg');
+      font-weight: normal;
+      font-style: normal;
+  }
+*/
+/*
+The following is based of Typebase:
+https://github.com/devinhunt/typebase.css
+I've edited it a bit, but it's a nice starting point.
+*/
+/*
+some nice typographical defaults
+more here: http://www.newnet-soft.com/blog/csstypography
+*/
+/* line 55, sass/fonts/_typography.scss */
+p {
+  -ms-word-wrap: break-word;
+  word-break: break-word;
+  word-wrap: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
+  -webkit-hyphenate-before: 2;
+  -webkit-hyphenate-after: 3;
+  hyphenate-lines: 3;
+  -webkit-font-feature-settings: "liga", "dlig";
+  -moz-font-feature-settings: "liga=1, dlig=1";
+  -ms-font-feature-settings: "liga", "dlig";
+  -o-font-feature-settings: "liga", "dlig";
+  font-feature-settings: "liga", "dlig"; }
+
+/* ------------susy-------- */
+/* line 14, ../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/susy-2.2.5/sass/susy/language/susyone/_grid.scss */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 18, sass/base/_variables.scss */
+.fullwidth {
+  width: 100%;
+  float: right;
+  margin-left: 1.84502%;
+  display: inline; }
+
+/* line 21, sass/base/_variables.scss */
+.oneSecond {
+  width: 49.07749%;
+  float: right;
+  margin-left: 1.84502%;
+  display: inline; }
+  /* line 23, sass/base/_variables.scss */
+  .oneSecond:nth-child(2n) {
+    width: 49.07749%;
+    float: left;
+    margin-left: 0;
+    *margin-right: -1em;
+    display: inline; }
+
+/* line 29, sass/base/_variables.scss */
+.oneThird {
+  width: 32.10332%;
+  float: right;
+  margin-left: 1.84502%;
+  display: inline; }
+  /* line 31, sass/base/_variables.scss */
+  .oneThird:nth-child(3n) {
+    width: 32.10332%;
+    float: left;
+    margin-left: 0;
+    *margin-right: -1em;
+    display: inline; }
+
+/* line 37, sass/base/_variables.scss */
+.oneFourth {
+  width: 23.61624%;
+  float: right;
+  margin-left: 1.84502%;
+  display: inline; }
+  /* line 39, sass/base/_variables.scss */
+  .oneFourth:nth-child(4n) {
+    width: 23.61624%;
+    float: left;
+    margin-left: 0;
+    *margin-right: -1em;
+    display: inline; }
+
+/* line 44, sass/base/_variables.scss */
+.Fifth {
+  width: 40.59041%;
+  float: right;
+  margin-left: 1.84502%;
+  display: inline; }
+
+/* line 48, sass/base/_variables.scss */
+.lastGrid {
+  float: left;
+  margin-left: 0;
+  *margin-right: -1em;
+  display: inline; }
+
+/*------ colors -----------*/
+/*----------------transition-shadow----------------------*/
+/* line 82, sass/base/_variables.scss */
+.def-transition, .bottom-tooltip, #menu li, #menu li a, .left-side img, .fourth-page .email-container, .fourth-page .email-container a, .fifth-page .email-container, .fifth-page .email-container a {
+  -moz-transition: all 0.4s ease-in-out 0s;
+  -o-transition: all 0.4s ease-in-out 0s;
+  -webkit-transition: all 0.4s ease-in-out;
+  -webkit-transition-delay: 0s;
+  transition: all 0.4s ease-in-out 0s; }
+
+/*----------------box-shadow----------------------*/
+/* line 88, sass/base/_variables.scss */
+.def-box-shadow, .bottom-tooltip {
+  -moz-box-shadow: 0px 0px 7px #E6E7E7;
+  -webkit-box-shadow: 0px 0px 7px #E6E7E7;
+  box-shadow: 0px 0px 7px #E6E7E7; }
+
+/* line 91, sass/base/_variables.scss */
+.dark-box-shadow, .left-side img {
+  -moz-box-shadow: 0px 0px 5px #1b1b1b;
+  -webkit-box-shadow: 0px 0px 5px #1b1b1b;
+  box-shadow: 0px 0px 5px #1b1b1b; }
+
+/* line 94, sass/base/_variables.scss */
+.gol-box-shadow {
+  -moz-box-shadow: 0px 0px 8px #FF585B;
+  -webkit-box-shadow: 0px 0px 8px #FF585B;
+  box-shadow: 0px 0px 8px #FF585B; }
+
+/* line 98, sass/base/_variables.scss */
+.def-text-shadow {
+  color: #0d3f64;
+  text-shadow: inset 1px 4px 6px #092b44, inset 0 0 0 #282828, inset 1px 4px 6px #092b44; }
+
+@-moz-keyframes move-up {
+  0% {
+    opacity: 0;
+    display: inline-block; }
+  100% {
+    opacity: 1;
+    display: inline-block; } }
+@-webkit-keyframes move-up {
+  0% {
+    opacity: 0;
+    display: inline-block; }
+  100% {
+    opacity: 1;
+    display: inline-block; } }
+@keyframes move-up {
+  0% {
+    opacity: 0;
+    display: inline-block; }
+  100% {
+    opacity: 1;
+    display: inline-block; } }
+@-moz-keyframes move-down {
+  0% {
+    opacity: 0;
+    display: inline-block; }
+  100% {
+    opacity: 0;
+    display: none; } }
+@-webkit-keyframes move-down {
+  0% {
+    opacity: 0;
+    display: inline-block; }
+  100% {
+    opacity: 0;
+    display: none; } }
+@keyframes move-down {
+  0% {
+    opacity: 0;
+    display: inline-block; }
+  100% {
+    opacity: 0;
+    display: none; } }
+/* line 118, sass/base/_variables.scss */
+.bottom-tooltip {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  width: 100px;
+  height: auto;
+  line-height: 20px;
+  padding: 10px;
+  left: 88%;
+  margin-left: -64px;
+  color: #125688;
+  text-align: center;
+  border: 4px solid #F2F2F2;
+  background: rgba(255, 255, 255, 0.85);
+  z-index: 9999;
+  text-indent: 0px;
+  position: absolute;
+  pointer-events: none;
+  top: 70px;
+  opacity: 0; }
+  /* line 138, sass/base/_variables.scss */
+  .bottom-tooltip::before, .bottom-tooltip::after {
+    content: '';
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    margin-left: -9px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid rgba(0, 0, 0, 0.1); }
+  /* line 150, sass/base/_variables.scss */
+  .bottom-tooltip::after {
+    top: -14px;
+    margin-left: -10px;
+    border-bottom: 10px solid #FFFFFF; }
+
+/* functions */
+/* mixins */
+/* base style */
+/* line 2, sass/base/_base.scss */
+body, html {
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  padding: 0;
+  margin: 0;
+  min-height: 100%;
+  display: block;
+  -moz-transition: all, 0.4s 1s 0s;
+  -o-transition: all, 0.4s 1s 0s;
+  -webkit-transition: all, 0.4s 1s;
+  -webkit-transition-delay: 0s;
+  transition: all 0.4s 1s 0s; }
+
+/* line 15, sass/base/_base.scss */
+body {
+  font-family: "Weblogma_Yekan";
+  direction: rtl;
+  font-size: 100%;
+  line-height: 180%; }
+  /* line 21, sass/base/_base.scss */
+  body form {
+    direction: rtl;
+    text-align: right; }
+
+/* line 29, sass/base/_base.scss */
+.body-wrapper {
+  width: 100%;
+  margin: auto;
+  margin-top: -1px;
+  overflow: hidden;
+  position: relative;
+  background-color: #F2F2F2;
+  background: url('../images/background/pattern1.jpg') top left repeat; }
+
+/* line 39, sass/base/_base.scss */
+.layout {
+  *zoom: 1;
+  max-width: 56.2em;
+  _width: 56.2em;
+  padding-left: 1em;
+  padding-right: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative; }
+  /* line 38, ../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/general/_clearfix.scss */
+  .layout:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+/* line 46, sass/base/_base.scss */
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transform: translate(0, 0); }
+
+/* line 49, sass/base/_base.scss */
+a {
+  text-decoration: none;
+  color: #125688; }
+  /* line 52, sass/base/_base.scss */
+  a:hover {
+    color: #FF585B; }
+
+/* line 59, sass/base/_base.scss */
+img, video, audio, iframe {
+  max-width: 100%; }
+
+/* line 62, sass/base/_base.scss */
+input, textarea, button {
+  max-width: 100%;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px; }
+
+/* line 66, sass/base/_base.scss */
+h1, h2, h3, h4, h5, h6 {
+  color: #111; }
+
+/* line 70, sass/base/_base.scss */
+dl, menu, ol, ul, dir {
+  list-style-type: none;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-start: 0px; }
+
+/* line 79, sass/base/_base.scss */
+.onScreen {
+  -moz-transition: opacity, 2s, ease-in-out 1s 0s;
+  -o-transition: opacity, 2s, ease-in-out 1s 0s;
+  -webkit-transition: opacity, 2s, ease-in-out 1s;
+  -webkit-transition-delay: 0s;
+  transition: opacity 2s ease-in-out 1s 0s;
+  opacity: 1; }
+
+/* Placeholder text color -- selectors need to be separate to work. */
+/* line 87, sass/base/_base.scss */
+::-webkit-input-placeholder {
+  color: #7d7b6d; }
+
+/* line 91, sass/base/_base.scss */
+:-moz-placeholder {
+  color: #7d7b6d; }
+
+/* line 95, sass/base/_base.scss */
+::-moz-placeholder {
+  color: #7d7b6d; }
+
+/* line 99, sass/base/_base.scss */
+:-ms-input-placeholder {
+  color: #7d7b6d; }
+
+/*
+ * Responsive images
+ *
+ * Fluid images for posts, comments, and widgets
+ */
+/* line 108, sass/base/_base.scss */
+.entry-content img,
+.entry-summary img,
+.comment-content img,
+.widget img,
+.wp-caption {
+  max-width: 100%; }
+
+/* Make sure images with WordPress-added height and width attributes are scaled correctly. */
+/* line 117, sass/base/_base.scss */
+.entry-content img,
+.entry-summary img,
+.comment-content img[height],
+img[class*="align"],
+img[class*="wp-image-"],
+img[class*="attachment-"] {
+  height: auto; }
+
+/* line 126, sass/base/_base.scss */
+img.size-full,
+img.size-large,
+img.wp-post-image {
+  height: auto;
+  max-width: 100%; }
+
+/* Make sure videos and embeds fit their containers. */
+/* line 134, sass/base/_base.scss */
+embed,
+iframe,
+object,
+video {
+  max-width: 100%; }
+
+/* Override the Twitter embed fixed width. */
+/* line 142, sass/base/_base.scss */
+.entry-content .twitter-tweet-rendered {
+  max-width: 100% !important; }
+
+/* Images */
+/* line 147, sass/base/_base.scss */
+.alignleft {
+  float: left; }
+
+/* line 151, sass/base/_base.scss */
+.alignright {
+  float: right; }
+
+/* line 155, sass/base/_base.scss */
+.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+/* line 161, sass/base/_base.scss */
+figure.wp-caption.alignleft,
+img.alignleft {
+  margin: 5px 20px 5px 0; }
+
+/* line 166, sass/base/_base.scss */
+.wp-caption.alignleft {
+  margin: 5px 10px 5px 0; }
+
+/* line 170, sass/base/_base.scss */
+figure.wp-caption.alignright,
+img.alignright {
+  margin: 5px 0 5px 20px; }
+
+/* line 175, sass/base/_base.scss */
+.wp-caption.alignright {
+  margin: 5px 0 5px 10px; }
+
+/* line 179, sass/base/_base.scss */
+img.aligncenter {
+  margin: 5px auto; }
+
+/* line 183, sass/base/_base.scss */
+img.alignnone {
+  margin: 5px 0; }
+
+/* line 187, sass/base/_base.scss */
+.wp-caption .wp-caption-text,
+.entry-caption,
+.gallery-caption {
+  color: #220e10;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 300;
+  margin: 0 0 24px; }
+
+/* line 197, sass/base/_base.scss */
+div.wp-caption.alignright img[class*="wp-image-"] {
+  float: right; }
+
+/* line 201, sass/base/_base.scss */
+div.wp-caption.alignright .wp-caption-text {
+  padding-left: 10px; }
+
+/* line 205, sass/base/_base.scss */
+img.wp-smiley,
+.rsswidget img {
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: 0; }
+
+/* line 215, sass/base/_base.scss */
+.wp-caption.alignleft + ul,
+.wp-caption.alignleft + ol {
+  list-style-position: inside; }
+
+/*-------------js Composer---------------------*/
+/* line 220, sass/base/_base.scss */
+.vc_grid.vc_row .vc_grid-item {
+  z-index: 0 !important; }
+
+/* line 2, sass/layout/_main.scss */
+.wrap {
+  margin-left: auto;
+  margin-right: auto;
+  width: 960px;
+  position: relative; }
+
+/* line 8, sass/layout/_main.scss */
+h1 {
+  font-size: 4em;
+  font-family: "Weblogma_Yekan"; }
+
+/* line 12, sass/layout/_main.scss */
+p {
+  font-size: 1em;
+  color: #5b5b5b; }
+
+/* line 16, sass/layout/_main.scss */
+.intro p {
+  width: 100%;
+  margin: 0 auto;
+  font-size: 1em; }
+
+/* line 21, sass/layout/_main.scss */
+.section {
+  text-align: center; }
+  /* line 23, sass/layout/_main.scss */
+  .section p {
+    text-align: justify; }
+
+/* line 27, sass/layout/_main.scss */
+#menu li {
+  display: inline-block;
+  margin: 10px;
+  color: #FFFFFF;
+  background: #4E4E4E;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  border: 1px dashed transparent; }
+
+/* line 36, sass/layout/_main.scss */
+#menu {
+  text-align: center; }
+
+/* line 39, sass/layout/_main.scss */
+#menu li.active {
+  background: #3BBB5A;
+  color: #FFFFFF; }
+
+/* line 43, sass/layout/_main.scss */
+#menu li a {
+  text-decoration: none;
+  color: #FFFFFF; }
+
+/* line 48, sass/layout/_main.scss */
+#menu li.active a:hover {
+  color: #FFFFFF; }
+
+/* line 51, sass/layout/_main.scss */
+#menu li:hover {
+  background: #3BBB5A; }
+
+/* line 54, sass/layout/_main.scss */
+#menu li a,
+#menu li.active a {
+  padding: 9px 18px;
+  display: block; }
+
+/* line 59, sass/layout/_main.scss */
+#menu li.active a {
+  color: #FFFFFF; }
+
+/* line 62, sass/layout/_main.scss */
+#menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 40px;
+  z-index: 70;
+  width: 100%;
+  padding: 0;
+  margin: 0; }
+
+/* line 72, sass/layout/_main.scss */
+.twitter-share-button {
+  position: fixed;
+  z-index: 99;
+  right: 149px;
+  top: 9px; }
+
+/* line 78, sass/layout/_main.scss */
+#download {
+  margin: 10px 0 0 0;
+  padding: 15px 10px;
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #49afcd;
+  background-image: -moz-linear-gradient(top, #5bc0de, #2f96b4);
+  background-image: -ms-linear-gradient(top, #5bc0de, #2f96b4);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#5bc0de), to(#2f96b4));
+  background-image: -webkit-linear-gradient(top, #5bc0de, #2f96b4);
+  background-image: -o-linear-gradient(top, #5bc0de, #2f96b4);
+  background-image: linear-gradient(to bottom, #5bc0de, #2f96b4);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5bc0de', endColorstr='#2f96b4', GradientType=0);
+  border-color: #2f96b4 #2f96b4 #1f6377;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  vertical-align: middle;
+  cursor: pointer;
+  display: inline-block;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05); }
+
+/* line 106, sass/layout/_main.scss */
+#download a {
+  text-decoration: none;
+  color: #fff; }
+
+/* line 110, sass/layout/_main.scss */
+#download:hover {
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #2F96B4;
+  background-position: 0 -15px;
+  -webkit-transition: background-position .1s linear;
+  -moz-transition: background-position .1s linear;
+  -ms-transition: background-position .1s linear;
+  -o-transition: background-position .1s linear;
+  transition: background-position .1s linear; }
+
+/* line 120, sass/layout/_main.scss */
+#infoMenu {
+  height: 20px;
+  color: #f2f2f2;
+  position: fixed;
+  z-index: 70;
+  bottom: 0;
+  width: 100%;
+  text-align: right;
+  font-size: 0.9em;
+  padding: 8px 0 8px 0; }
+
+/* line 131, sass/layout/_main.scss */
+#infoMenu ul {
+  padding: 0 40px; }
+
+/* line 134, sass/layout/_main.scss */
+#infoMenu li a {
+  display: block;
+  margin: 0 22px 0 0;
+  color: #333; }
+
+/* line 139, sass/layout/_main.scss */
+#infoMenu li a:hover {
+  text-decoration: underline; }
+
+/* line 142, sass/layout/_main.scss */
+#infoMenu li {
+  display: inline-block;
+  position: relative; }
+
+/* line 146, sass/layout/_main.scss */
+#examplesList {
+  display: none;
+  background: #282828;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  padding: 20px;
+  float: left;
+  position: absolute;
+  bottom: 29px;
+  right: 0;
+  width: 638px;
+  text-align: left; }
+
+/* line 160, sass/layout/_main.scss */
+#examplesList ul {
+  padding: 0; }
+
+/* line 163, sass/layout/_main.scss */
+#examplesList ul li {
+  display: block;
+  margin: 5px 0; }
+
+/* line 167, sass/layout/_main.scss */
+#examplesList ul li a {
+  color: #BDBDBD;
+  margin: 0; }
+
+/* line 171, sass/layout/_main.scss */
+#examplesList ul li a:hover {
+  color: #f2f2f2; }
+
+/* line 174, sass/layout/_main.scss */
+#examplesList .column {
+  float: left;
+  margin: 0 20px 0 0; }
+
+/* line 178, sass/layout/_main.scss */
+#examplesList h3 {
+  color: #f2f2f2;
+  font-size: 1.2em;
+  margin: 0 0 15px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
+  -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
+  padding: 0 0 5px 0; }
+
+/* Demos Menu
+ * --------------------------------------- */
+/* line 193, sass/layout/_main.scss */
+#demosMenu {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 999; }
+
+/* line 200, sass/layout/_main.scss */
+.section {
+  text-align: center; }
+
+/* Bottom menu
+* --------------------------------------- */
+/* line 207, sass/layout/_main.scss */
+#infoMenu li a {
+  color: #FFFFFF;
+  opacity: 0.9;
+  background-color: #4E4E4E; }
+  /* line 211, sass/layout/_main.scss */
+  #infoMenu li a:hover {
+    opacity: 1;
+    background-color: #3BBB5A; }
+
+/* line 217, sass/layout/_main.scss */
+.intro img {
+  margin-top: 20px;
+  max-width: 400px;
+  height: auto; }
+/* line 222, sass/layout/_main.scss */
+.intro h1 {
+  color: #111; }
+
+/* line 230, sass/layout/_main.scss */
+.home {
+  padding-top: 30px; }
+  /* line 232, sass/layout/_main.scss */
+  .home h1 {
+    font-size: 210%;
+    color: #4E4E4E;
+    margin: 5px 10px 30px; }
+
+/* line 238, sass/layout/_main.scss */
+.third-page {
+  text-align: center; }
+  /* line 240, sass/layout/_main.scss */
+  .third-page h1 {
+    text-align: center; }
+  /* line 244, sass/layout/_main.scss */
+  .third-page span.title-desc {
+    display: inline-block;
+    clear: both;
+    margin: auto;
+    color: #3BBB5A; }
+
+/* line 253, sass/layout/_main.scss */
+.right-side {
+  margin-top: 30px;
+  width: 100%;
+  float: right;
+  margin-left: 1.84502%;
+  display: inline; }
+  @media (min-width: 45em) {
+    /* line 253, sass/layout/_main.scss */
+    .right-side {
+      width: 49.07749%;
+      float: right;
+      margin-left: 1.84502%;
+      margin-right: auto; } }
+
+/* line 262, sass/layout/_main.scss */
+.left-side {
+  width: 100%;
+  float: right;
+  margin-left: 1.84502%;
+  display: inline;
+  margin-top: 30px; }
+  @media (min-width: 45em) {
+    /* line 262, sass/layout/_main.scss */
+    .left-side {
+      width: 49.07749%;
+      float: left;
+      margin-left: 0;
+      margin-right: auto; } }
+  /* line 269, sass/layout/_main.scss */
+  .left-side img {
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    max-width: 80%;
+    height: auto; }
+    /* line 275, sass/layout/_main.scss */
+    .left-side img:hover {
+      transform: translateY(-3px); }
+  /* line 279, sass/layout/_main.scss */
+  .left-side span {
+    margin-top: 0px;
+    margin-bottom: 30px;
+    display: inline-block;
+    max-width: 80%;
+    padding: 0px 0px 5px;
+    font-size: 80%;
+    color: #686868;
+    border-bottom: 1px dashed #3BBB5A; }
+
+/* line 290, sass/layout/_main.scss */
+.right-side {
+  width: 100%;
+  float: right;
+  margin-left: 1.84502%;
+  display: inline; }
+  @media (min-width: 45em) {
+    /* line 290, sass/layout/_main.scss */
+    .right-side {
+      width: 49.07749%;
+      float: right;
+      margin-left: 1.84502%;
+      margin-right: auto; } }
+
+/* line 299, sass/layout/_main.scss */
+.fourth-page .email-container {
+  max-width: 340px;
+  overflow: hidden;
+  border: 2px dashed #cccece;
+  padding: 15px 15px;
+  margin: 30px auto;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px; }
+  /* line 307, sass/layout/_main.scss */
+  .fourth-page .email-container:hover {
+    transform: translateY(-4px); }
+  /* line 310, sass/layout/_main.scss */
+  .fourth-page .email-container img {
+    width: 50px;
+    height: auto;
+    float: right;
+    margin-top: 0px; }
+  /* line 316, sass/layout/_main.scss */
+  .fourth-page .email-container a {
+    padding: 10px;
+    display: inline-block;
+    float: left;
+    font-size: 140%;
+    color: #3BBB5A; }
+    /* line 323, sass/layout/_main.scss */
+    .fourth-page .email-container a:hover {
+      color: #4E4E4E; }
+
+/* line 330, sass/layout/_main.scss */
+.fifth-page h1, .fifth-page p {
+  color: #FFFFFF; }
+/* line 333, sass/layout/_main.scss */
+.fifth-page .email-container {
+  max-width: 340px;
+  overflow: hidden;
+  border: 2px dashed #FFFFFF;
+  padding: 15px 15px;
+  margin: 30px auto;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px; }
+  /* line 341, sass/layout/_main.scss */
+  .fifth-page .email-container:hover {
+    transform: translateY(-4px); }
+  /* line 344, sass/layout/_main.scss */
+  .fifth-page .email-container img {
+    width: 50px;
+    height: auto;
+    float: right;
+    margin-top: 0px; }
+  /* line 350, sass/layout/_main.scss */
+  .fifth-page .email-container a {
+    padding: 10px;
+    display: inline-block;
+    float: left;
+    font-size: 140%;
+    color: #FFFFFF; }
+    /* line 357, sass/layout/_main.scss */
+    .fifth-page .email-container a:hover {
+      color: #4E4E4E; }
+
+/* line 364, sass/layout/_main.scss */
+.sixth-page p {
+  text-align: center; }
+/* line 368, sass/layout/_main.scss */
+.sixth-page ul li {
+  padding: 10px;
+  font-size: 130%; }
+
+/* line 375, sass/layout/_main.scss */
+.seventh-page p {
+  text-align: center; }
+/* line 379, sass/layout/_main.scss */
+.seventh-page ul li {
+  text-align: right;
+  padding: 10px;
+  font-size: 120%; }
+
+/* line 387, sass/layout/_main.scss */
+.eighth-page h1, .eighth-page p, .eighth-page ul, .eighth-page li {
+  color: #FFFFFF; }
+/* line 390, sass/layout/_main.scss */
+.eighth-page p {
+  text-align: center;
+  color: #E6E7E7; }
+/* line 395, sass/layout/_main.scss */
+.eighth-page ul li {
+  text-align: right;
+  color: #FFFFFF;
+  padding: 10px; }
+  /* line 400, sass/layout/_main.scss */
+  .eighth-page ul li i:before {
+    font-size: 120%;
+    margin-left: 10px;
+    vertical-align: center;
+    color: #3BBB5A; }
+  /* line 407, sass/layout/_main.scss */
+  .eighth-page ul li a {
+    color: #3BBB5A; }
+    /* line 409, sass/layout/_main.scss */
+    .eighth-page ul li a:hover {
+      color: #FFFFFF; }
+
+/* dividers style */
+/* table style */
+/* line 2, sass/modules/_tables.scss */
+table.timing-table {
+  text-align: center;
+  border: 2px solid #4E4E4E;
+  color: #4E4E4E;
+  display: table;
+  margin: auto;
+  margin-top: 5px;
+  margin-bottom: 30px; }
+  /* line 12, sass/modules/_tables.scss */
+  table.timing-table tbody tr {
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #4E4E4E;
+    padding: 0px 10px; }
+    /* line 16, sass/modules/_tables.scss */
+    table.timing-table tbody tr th {
+      color: #111;
+      font-size: 90%;
+      padding: 5px 10px; }
+    /* line 21, sass/modules/_tables.scss */
+    table.timing-table tbody tr td {
+      padding: 5px 10px;
+      max-width: 350px; }
+    /* line 25, sass/modules/_tables.scss */
+    table.timing-table tbody tr:last-child {
+      border: 0px; }
+    /* line 28, sass/modules/_tables.scss */
+    table.timing-table tbody tr:nth-of-type(2n) {
+      background-color: #E6E7E7; }
